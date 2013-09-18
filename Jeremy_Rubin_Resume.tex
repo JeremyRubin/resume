@@ -1,0 +1,255 @@
+% resume.tex
+%
+% (c) 2013 Jeremy L. Rubin <jlrubin@mit.edu> http://rubinte.ch
+%
+
+%%%%%%%%%%%%
+% Basic setup
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\hyphenchar\font=-1
+\usepackage{geometry} 
+\geometry{letterpaper, twoside} 
+\setstretch{1}
+\usepackage{booktabs}
+\usepackage{topcapt}
+%\raggedbottom
+%\raggedright
+\usepackage{tabulary}
+\usepackage{hyphenat}
+\usepackage{multicol}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% PDF setup
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+\hypersetup{
+    letterpaper,
+    colorlinks,
+    urlcolor=black,
+    pdfpagemode=none,
+    pdftitle={Resume},
+    pdfauthor={Jeremy Rubin},
+    pdfsubject={Resume},
+    pdfkeywords={python, unix,  web development, MIT, android, arduino, linux, ruby, java, tornado, MongoDB, julia, JavaScript, CSS, HTML5, jQuery, Bootstrap, beego, Rails, node.js, nginx, Go, GoLang, TechFair, TechX, HackMIT,  Media Lab, MIT Media Lab, Nokia, Pokerbots}
+}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% Margin setup
+\oddsidemargin  -0.5in
+\evensidemargin -0.5in
+\textwidth      7.2in
+\headheight     -0.7in
+\topmargin      0.0in
+\textheight=10.7in
+%\footheight 1.0in 
+%%%%%%%%%%%%
+
+\begin{document}
+
+%% Heading
+\begin{center}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
+		&\huge{\textbf{\sc{Jeremy L. Rubin}}}&\\
+		jlrubin@mit.edu &  \small\url{https://github.com/JeremyRubin} & Mobile: (805)-280-8095\\
+		\hline\hline
+	\end{tabular*}
+\end{center}
+
+%% Experience Section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Experience}}\\
+	\hline
+\end{tabular*}
+% Nokia
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Nokia} & Sunnyvale, CA \\
+	\emph{Intern} & \emph{Summer 2013}
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\--$}{
+\setlength{\itemsep}{ -5pt}
+\setlength{\partopsep}{ -18pt}
+}
+	\item Data Mining and Machine Learning under Taneli Mielikäinen with the Emerging Platforms group.
+	\item Hardware and software prototyping under Kent Lyons' and Sean White's Interaction Ecologies group.
+	\item Product Manager and Embedded System Engineer for a barbot designed a built by all the Nokia Sunnyvale interns as a part of the Advanced Engineering group.
+\end{list}
+}
+% Media Lab
+\noindent 
+%\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{MIT Media Lab Viral Spaces} & Cambridge, MA \\
+	\emph{Undergraduate Researcher} & \emph{June 2011 to Present}
+\end{tabular*}
+{\small
+
+\noindent
+\begin{list}{$\--$}{
+\setlength{\itemsep}{ -5pt}
+\setlength{\partopsep}{ -18pt}
+}
+	\item Lead developer on Graffiti Codes, mobile app for encoding messages to drawings via graffiti gestures.\\\url{http://bit.ly/11kaZBE}
+	\item Implementing social authentication for Facebook and Twitter integration for Brin.gy, an instant social data web application creation suite
+	\item Developed video playback support to Junkyard Jumbotron: web app for linking internet-enabled devices together as one screen, like in sports stadium.  \url{http://c4fcm.github.io/Junkyard-Jumbotron/}
+\end{list}
+}
+% Azapa
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Azapa: Electric Motorcycles} \\
+	\emph{Intern} & \emph{Summer 2012}
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\--$}{
+\setlength{\itemsep}{ -5pt}
+\setlength{\partopsep}{ -18pt}
+}
+	\item  Battery pack optimization by minimizing parallel internal resistance variation via simulated annealing using Ruby.
+\end{list}
+
+}
+
+%% Education and Training
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Education}}\\
+	\hline
+\end{tabular*}
+
+%MIT
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Massachusetts Institute of Technology (MIT)} & \emph{September 2012 to Present} \\
+	\emph{GPA 4.5}\\
+	\emph{Electrical Engineering and Computer Science}  & \emph{Class of 2016}
+\end{tabular*}
+{\small
+
+\noindent
+Humanities concentration in Comparitive Media Studies.
+}
+%PEA
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Phillips Exeter Academy} & \emph{September 2009 to June 2012} \\
+	\emph{GPA 9.64/11.0}  & \emph{Class of 2012}
+\end{tabular*}
+%UCSB
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{University of California Santa Barbara} & \emph{Summer 2010} \\
+	\emph{GPA 4.0}  & \emph{Research Mentorship Program}
+\end{tabular*}
+%% Relevant Coursework
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Relevant Coursework}}\\
+	\hline
+\end{tabular*}
+\noindent 
+\begin{multicols}{2}
+	\noindent
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{6.006*} -- \emph{Introduction to Algorithms} \\
+		\textbf{6.02*} -- \emph{Introduction to EECS II} \\
+		 \textbf{6.01} -- \emph{Introduction to EECS I} \\
+		 \textbf{8.022} -- \emph{Electricity and Magnetism (hard version)} \\
+		\small{* denotes current coursework}
+	\end{tabular*}
+\columnbreak
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		 \textbf{6.005*} -- \emph{Elements of Software Construction} \\
+		 \textbf{18.06*} -- \emph{Linear Algebra}  \\
+		\textbf{6.042} -- \emph{Mathematics for Computer Science} \\
+		\textbf{21W.789} -- \emph{Communicating with Mobile Technology}
+	\end{tabular*}
+\end{multicols}
+%% Skills
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Skills}}\\
+	\hline
+\end{tabular*}
+%Web Dev
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Web Dev.} -- \emph{JavaScript, CSS, HTML5, jQuery, Bootstrap, Tornado, beego, Rails, node.js, MongoDB, nginx}
+\end{tabular*}
+%Embedded Systems
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Embedded Systems} -- \emph{Arduino, Raspberry Pi}
+\end{tabular*}
+%Languages
+\noindent
+\\  
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Languages} -- \emph{Python, Java, Go, Ruby, Julia, C++/C}
+\end{tabular*}
+%Android
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Native Mobile} -- \emph{Backend Android}
+\end{tabular*}
+\\
+%Awards
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Awards}}\\
+	\hline
+\end{tabular*}
+%% Pokerbots
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{MIT Pokerbots} & \emph{January 2013} \\
+\end{tabular*}
+{\small
+\noindent
+2\textsuperscript{nd} place in MIT's Artificial Intelligence poker tournament new team bracket.
+}
+%% Other Activities
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Other Activities}}\\
+	\hline
+\end{tabular*}
+
+\begin{multicols}{2}
+	\noindent
+	% Left Col (Specifics)
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\noindent 
+		\textbf{MIT TechX/Techfair} -- \emph{Dev. Ops.}\\
+		\textbf{Phi Kappa Theta} -- \emph{Brother}\\
+		\textbf{MIT Varsity Squash} \emph{2013 Season}\\
+	\end{tabular*}
+	\columnbreak
+	% Right Col (General)
+		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+			\noindent
+			\textbf{Unicycling, Road Cycling, Longboarding}\\
+			\textbf{Photography}\\
+		\end{tabular*}
+\end{multicols}
+\end{document}
