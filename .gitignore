@@ -3,3 +3,4 @@
 *.gz
 *.out
 .DS_STORE
+*.fdb_latexmk
